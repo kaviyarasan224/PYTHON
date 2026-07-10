@@ -42,7 +42,7 @@ else:
 '''4.wap to check the given character is alphabet or not'''
 
 '''char=input('enter the word : ')
-if (ord(char)>=65) and (ord(char) <=90)or (ord(char)>=92) and (ord(char) <=122):
+if (ord(char)>=65) and (ord(char) <=90)or (ord(char)>=97) and (ord(char) <=122):
     print('it is alphepet')
 else:
     print('its not alphept')'''
