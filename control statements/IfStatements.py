@@ -85,3 +85,25 @@ else:
     print(l[1:-1])'''
 
 
+#email checking quetion
+'''Email=input('enter the email : ')
+if ('@' in Email) and (Email[0]!='@') and Email.count('@')==1 and '.' in Email  and Email.index('.')>Email.index('@'):
+    print('it is an valid email')
+else:
+        print('not a valid email')'''
+
+#wap tocheck 1st char in first name & last name is same or not if it is same print reverse of first name  & last name else print as it is
+
+'''firstname=input('enter your first name : ')        
+lastname=input('enter your last name : ')        
+if firstname[0]==lastname[0]:
+    print("name:"+firstname[::-1]+lastname[::-1])
+else:
+    print("name:"+firstname+lastname)'''
+
+#wap to check whether list is having more than 10 values if it is having more than 10 values print 1st value else print reverse of 1st value & last value
+'''l=eval(input('enter your list :'))
+if len(l)>10 :
+        print(l[0])
+else:
+    print(l[0][::-1],l[len(l)-1][::-1])'''
