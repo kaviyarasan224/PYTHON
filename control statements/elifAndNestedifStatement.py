@@ -147,3 +147,91 @@ elif num%5==0:
         print('buzz')
 elif num%3==0:
         print('fizz')
+#WAP TO CHECK WHETHER THE LAST VALUE OF A NUM IS EVEN NO OR NOT
+
+num=input('enter the value: ')
+if int(num[-1])%2==0:
+        print('even')
+else:
+    print('odd')
+            
+    
+
+#WAP TO CHECK WHETHER THE STRING IS PALINDROME AND HAVING LENGTH GREATER THAN 10 OR NOT
+val=input('enter the string:')
+if val[::-1]==val and len(val)>10:
+    print('it is a palindrome and have a 10 letter' )
+elif val[::-1]==val and len(val)<10:
+    print('it is a palindrom but not have 10 letters')
+else:
+    print('it is not a palindrom')
+
+
+
+#WAP TO CHECK LIST IS PALINDROME OR NOT IF IT IS PALIINDROME PRINT 1ST VALUE AND LAST VALUE OF LIST ELSE PRINT BETWEEN VALUES
+val=input('enter the values:')
+if val[::-1]==val:
+    print(val[0],val[-1])
+else:
+    print(val[1:len(val)-1:1])
+
+
+#WAP TO CHECK LAST VALUE OF LIST IS STRING AND IT STARTS WITH VOWEL OR NOT
+val=eval(input('enter the list:'))
+if type(val[-1])==str and val[-1][0] in 'aeiouAEIOU':
+    print( 'last is str and it stsrt with vowels')
+elif  type(val[-1])==str and val[-1][0] not in 'aeiouAEIOU':
+     print( 'last is str and it stsrt with  no vowels')
+else:
+    print('last value is not a string')
+
+ 
+
+#WAP TO CHECK WHETHER NUM IS EVEN AND IT IS DIVISIBLE BY 5 OR NOT
+
+num=int(input('enter the number:'))
+if num%2==0  and num%5!=0:
+    print('it is a even num but it is not divisible of 5')
+elif num%2==0 and num%5==0:
+    print('it is even and dividible of 5')
+else:
+    print('it is an odd number')
+
+
+#WAP TO CHECK WHETHER DATA  IS MUTABLE OR IMMUTABLE
+    
+data=eval(input('enter the data :'))
+if type(data)==tuple or type(data)==dict:
+    print('it is immutable ')
+else:
+    print('it is mutable')
+
+
+
+
+#WAP TO CHECK LENGTH OF THE LIST IS ODD OR EVEN IF IT IS EVEN APPEND NEW VALUE IF IT IS ODD DELETE LASST VALUE FROM LIST
+
+val=eval(input('enter the list :'))
+if len(val)%2==0:
+    print('it is even')
+    val.append(7)
+    print(val)
+else:
+    print('it is odd')
+    val.pop()
+    print(val)  
+
+
+    
+
+
+#WAP TO PRINT HI IF NUM IS DIVISIBLE BY 3 AND PRINT HELLO IF IT IS DIV BY 7 AND  PRINT HIHELLO IF IT IS DIV BY BOTH 3&7
+num=int(input ('enter the number:'))
+if  num%3==0 and num%7==0:
+    print('hi hello')
+elif num%7==0:
+    print('hello')
+elif  num%3==0:
+    print('hi ')
+else:
+    print('none')
